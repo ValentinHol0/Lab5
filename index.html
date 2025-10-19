@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №4</title>
+</head>
+<body>
+
+    <h1>Моя почти перша HTML-форма</h1>
+
+    <form action="https://httpbin.org/get" method="GET" target="_blank">
+        
+        <p>
+            <label>
+                Моя нейм
+                <input type="text" name="user_name" placeholder="Введіть ваше ім'я">
+            </label>
+        </p>
+
+        <p>
+            <label for="birthdate_id">Коли ся вродив:</label>
+            <input type="date" id="birthdate_id" name="user_birthdate">
+        </p>
+
+        <p>
+            <label for="email_id">Укр пошта:</label>
+            <input type="email" id="email_id" name="user_email" placeholder="example@mail.com">
+        </p>
+
+        <p>
+            <label for="message_id">Написати шось:</label><br>
+            <textarea id="message_id" name="user_message" rows="4" cols="30"></textarea>
+        </p>
+        
+        <hr>
+
+        <fieldset>
+            <legend>Шо я люблю ранком пити?</legend>
+            <p><label><input type="checkbox" name="Vino" value="Vino"> Вино домашнтьой</label></p>
+            <p><label><input type="checkbox" name="Vino" value="Vino chizai"> Вино чізай</label></p>
+            <p><label><input type="checkbox" name="Vino" value="Vino-vino"> Вино з виноградова</label></p>
+            <p><label><input type="checkbox" name="Vino" value="Not vino"> Не вино</label></p>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Хто я?</legend>
+            <p><label><input type="radio" name="Zakarpattia" value="+-Zakarpattia"> Почти закарпаття</label></p>
+            <p><label><input type="radio" name="Zakarpattia" value="Zakarpattia"> Закарпаття</label></p>
+            <p><label><input type="radio" name="Zakarpattia" value="Not_Zakarpattia"> Не закарпаття</label></p>
+        </fieldset>
+        
+        <hr>
+        
+        <p>
+            <button type="submit">Надіслати</button>
+            <button type="reset">Очистити</button>
+        </p>
+    </form>
+
+    <hr>
+    
+    <h2>Піктюре</h2>
+
+    <picture>
+        <img src="https://picsum.photos/1000/400" alt="Випадкове зображення">
+    </picture>
+    
+</body>
+</html>
